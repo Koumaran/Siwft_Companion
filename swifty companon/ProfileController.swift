@@ -41,6 +41,7 @@ class ProfileController: UICollectionViewController, UICollectionViewDelegateFlo
 		// Register cell classes
 		collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellId)
 		collectionView.register(HeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
+		collectionView.register(UINib(nibName: "SkillsContainer", bundle: nil), forCellWithReuseIdentifier: "SkillsContainer")
         collectionView.register(UINib(nibName: "ProfileHeader", bundle: nil), forCellWithReuseIdentifier: "contentHeader")
 		collectionView.contentInsetAdjustmentBehavior = .never
 		let iv = UIImageView(image: UIImage(named: "globalBakcground"))
@@ -59,11 +60,11 @@ class ProfileController: UICollectionViewController, UICollectionViewDelegateFlo
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-		return CGSize(width: view.frame.width, height: 340)
+		return CGSize(width: view.frame.width, height: 240)
 	}
 	
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return 2
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -71,9 +72,8 @@ class ProfileController: UICollectionViewController, UICollectionViewDelegateFlo
             cell.setupHeaderView(profile)
             return cell
         }
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellId, for: indexPath)
-    
-        cell.backgroundColor = .black
+		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SkillsContainer", for: indexPath) as! SkillsContainer
+    	cell.skills = profile.skill
     
         return cell
     }

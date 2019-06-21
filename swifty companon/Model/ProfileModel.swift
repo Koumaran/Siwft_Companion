@@ -25,13 +25,13 @@ struct Profile: Decodable {
     let poolYear: String
     let location: String?
     let wallet: Int
-		let cursusUsers: [CursusUsers]
-		let projectsUsers: [ProjectsUsers]
-		let languagesUsers: [Language]
-		let achievements: [Achievement]
-		let titles: [Title]
-		let titlesUsers: [Title]
-		let expertisesUsers: [ExpertiseUser]
+	let cursusUsers: [CursusUsers]
+	let projectsUsers: [ProjectsUsers]
+	let languagesUsers: [Language]
+	let achievements: [Achievement]
+	let titles: [Title]
+	let titlesUsers: [Title]
+	let expertisesUsers: [ExpertiseUser]
     
     private enum CodingKeys: String, CodingKey {
         case id, email,login, url, phone, displayname, location, wallet, achievements, titles
@@ -42,9 +42,9 @@ struct Profile: Decodable {
         case correctionPoint = "correction_point"
         case poolMonth = "pool_month"
         case poolYear = "pool_year"
-				case cursusUsers = "cursus_users"
-				case projectsUsers = "projects_users"
-				case languagesUsers = "languages_users"
+			case cursusUsers = "cursus_users"
+			case projectsUsers = "projects_users"
+			case languagesUsers = "languages_users"
 			case titlesUsers = "titles_users"
 			case expertisesUsers = "expertises_users"
     }
@@ -63,22 +63,22 @@ struct Profile: Decodable {
 struct CursusUsers: Decodable {
     let grade: String?
     let level: Double
-		let skills: [Skills]
+	let skills: [Skills]
     let id: Int?
     let beginAt: String?
     let endAt: String?
     let cursusId: Int?
     let hasCoalition: Bool
-		let user: User
-		let cursus: Cursus
-	
-		private enum CodingKeys: String, CodingKey {
-			case grade, level, skills, id, user, cursus
-			case beginAt = "begin_at"
-			case endAt = "end_at"
-			case cursusId = "cursus_id"
-			case hasCoalition = "has_coalition"
-		}
+	let user: User
+	let cursus: Cursus
+
+	private enum CodingKeys: String, CodingKey {
+		case grade, level, skills, id, user, cursus
+		case beginAt = "begin_at"
+		case endAt = "end_at"
+		case cursusId = "cursus_id"
+		case hasCoalition = "has_coalition"
+	}
 }
 
 struct Cursus: Decodable {
@@ -87,10 +87,10 @@ struct Cursus: Decodable {
     let name: String?
     let slug: String?
 	
-		private enum CodingKeys: String, CodingKey {
-			case id, name, slug
-			case createdAt = "created_at"
-		}
+	private enum CodingKeys: String, CodingKey {
+		case id, name, slug
+		case createdAt = "created_at"
+	}
 }
 struct Skills: Decodable {
     let id: Int?
@@ -101,64 +101,64 @@ struct ProjectsUsers:Decodable {
     let id: Int
     let occurrence: Int?
     let finalMark: Int?
-		let status: String?
-		let validated: Bool?
-		let currentTeamId: Int?
-		let project: Project?
-		let cursusIds: [Int]?
-		let markedAt: String?
-		let marked: Bool?
-	
-		private enum CodingKeys: String, CodingKey {
-			case id, occurrence, status, project, marked
-			case finalMark = "final_mark"
-			case validated = "validated?"
-			case currentTeamId = "current_team_id"
-			case cursusIds = "cursus_ids"
-			case markedAt = "marked_at"
-		}
+	let status: String?
+	let validated: Bool?
+	let currentTeamId: Int?
+	let project: Project?
+	let cursusIds: [Int]?
+	let markedAt: String?
+	let marked: Bool?
+
+	private enum CodingKeys: String, CodingKey {
+		case id, occurrence, status, project, marked
+		case finalMark = "final_mark"
+		case validated = "validated?"
+		case currentTeamId = "current_team_id"
+		case cursusIds = "cursus_ids"
+		case markedAt = "marked_at"
+	}
 }
 struct Project: Decodable {
-		let id: Int?
-		let name: String?
-		let slug: String?
-		let parentId: Int?
-	
-		private enum CodingKeys: String, CodingKey {
-			case id, name, slug
-			case parentId = "parent_id"
-		}
+	let id: Int?
+	let name: String?
+	let slug: String?
+	let parentId: Int?
+
+	private enum CodingKeys: String, CodingKey {
+		case id, name, slug
+		case parentId = "parent_id"
+	}
 }
 struct Language: Decodable {
-		let id: Int?
-		let languageId: Int?
-		let userId: Int?
-		let position: Int?
-		let createdAt: String?
-	
-		private enum CodingKeys: String, CodingKey {
-			case id, position
-			case languageId = "language_id"
-			case userId = "user_id"
-			case createdAt = "created_at"
-		}
+	let id: Int?
+	let languageId: Int?
+	let userId: Int?
+	let position: Int?
+	let createdAt: String?
+
+	private enum CodingKeys: String, CodingKey {
+		case id, position
+		case languageId = "language_id"
+		case userId = "user_id"
+		case createdAt = "created_at"
+	}
 }
 struct Achievement: Decodable {
-		let id: Int
-		let name: String
-		let description: String?
-		let tier: String?
-		let king: String?
-		let visible: Bool?
-		let image: String?
-		let nbrOfSucces: Int?
-		let userUrl: String?
-	
-		private enum CodingKeys: String, CodingKey {
-			case id, name, description, tier, king, visible, image
-			case nbrOfSucces = "nbr_of_success"
-			case userUrl = "user_url"
-		}
+	let id: Int
+	let name: String
+	let description: String?
+	let tier: String?
+	let king: String?
+	let visible: Bool?
+	let image: String?
+	let nbrOfSucces: Int?
+	let userUrl: String?
+
+	private enum CodingKeys: String, CodingKey {
+		case id, name, description, tier, king, visible, image
+		case nbrOfSucces = "nbr_of_success"
+		case userUrl = "user_url"
+	}
 }
 // Is Titles and Titles_users
 struct Title: Decodable {

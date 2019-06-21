@@ -17,7 +17,6 @@ class ProfileHeaderView: UICollectionViewCell {
 	@IBOutlet weak var gradeValueLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var mailLabel: UILabel!
-    @IBOutlet weak var localisationLabel: UILabel!
     
 	
 	func setupHeaderView(_ profile: Profile) {
@@ -26,7 +25,6 @@ class ProfileHeaderView: UICollectionViewCell {
 		evaluationPointLabel.text = "Evaluation points  \(profile.correctionPoint)"
         phoneLabel.text = "Téléphone  0\(profile.phone ?? "xxxxxxxxx")"
         mailLabel.text = "E-Mail  \(profile.email)"
-        localisationLabel.text = "Localisation  \(profile.location ?? "-")"
 		
 		if let currentCursus = profile.cursusUsers.first {
 			cursusValueLabel.text = "Cursus  \(currentCursus.cursus.name ?? "-")"

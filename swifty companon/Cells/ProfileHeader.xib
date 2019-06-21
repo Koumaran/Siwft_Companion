@@ -1,117 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileController" customModule="swifty_companon" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" restorationIdentifier="ProfileHeaderView" id="iN0-l3-epB" customClass="ProfileHeaderView" customModule="swifty_companon" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="658" height="407"/>
+            <rect key="frame" x="0.0" y="0.0" width="658" height="336"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="i8B-lL-R1A">
-                    <rect key="frame" x="0.0" y="58" width="658" height="308"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIZ-dY-xLe">
-                            <rect key="frame" x="0.0" y="0.0" width="658" height="44"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="44" id="4py-ll-2SO"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evaluation points" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEB-RN-BNh">
-                            <rect key="frame" x="0.0" y="44" width="658" height="44"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cursus" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YiK-1x-v9b">
-                            <rect key="frame" x="0.0" y="88" width="658" height="44"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4C-Yd-Ts1">
-                            <rect key="frame" x="0.0" y="132" width="658" height="44"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Téléphone" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zg6-sf-gyd">
-                            <rect key="frame" x="0.0" y="176" width="658" height="44"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mail" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTW-y7-IyK">
-                            <rect key="frame" x="0.0" y="220" width="658" height="44"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Localisation" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4t-LR-v5e">
-                            <rect key="frame" x="0.0" y="264" width="658" height="44"/>
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                </stackView>
-                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Upe-1t-QO7">
-                    <rect key="frame" x="8" y="382" width="650" height="15"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="15" id="fbq-tZ-fDh"/>
-                    </constraints>
-                </progressView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9k5-ad-pID">
-                    <rect key="frame" x="0.0" y="0.0" width="658" height="58"/>
+                    <rect key="frame" x="0.0" y="0.0" width="658" height="44"/>
                     <constraints>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="HZo-zg-o1z"/>
+                        <constraint firstAttribute="height" constant="44" id="HZo-zg-o1z"/>
                     </constraints>
                     <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIZ-dY-xLe">
+                    <rect key="frame" x="0.0" y="44" width="658" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="4py-ll-2SO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evaluation points" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEB-RN-BNh">
+                    <rect key="frame" x="0.0" y="88" width="658" height="44"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cursus" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YiK-1x-v9b">
+                    <rect key="frame" x="0.0" y="132" width="658" height="44"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grade" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z4C-Yd-Ts1">
+                    <rect key="frame" x="0.0" y="176" width="658" height="44"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Téléphone" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zg6-sf-gyd">
+                    <rect key="frame" x="0.0" y="220" width="658" height="44"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mail" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mTW-y7-IyK">
+                    <rect key="frame" x="0.0" y="264" width="658" height="44"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Upe-1t-QO7">
+                    <rect key="frame" x="8" y="316" width="650" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="fbq-tZ-fDh"/>
+                    </constraints>
+                </progressView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="9k5-ad-pID" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1oV-MB-XV0"/>
                 <constraint firstItem="9k5-ad-pID" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2BZ-W9-Arg"/>
-                <constraint firstItem="Upe-1t-QO7" firstAttribute="top" secondItem="i8B-lL-R1A" secondAttribute="bottom" constant="16" id="9jq-gK-7Ae"/>
-                <constraint firstItem="i8B-lL-R1A" firstAttribute="top" secondItem="9k5-ad-pID" secondAttribute="bottom" id="I5x-w8-hwV"/>
-                <constraint firstAttribute="trailing" secondItem="i8B-lL-R1A" secondAttribute="trailing" id="MDM-n8-4Jq"/>
-                <constraint firstItem="Upe-1t-QO7" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" constant="-10" id="NXT-rK-KYZ"/>
+                <constraint firstItem="Z4C-Yd-Ts1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="3eK-OR-AMX"/>
+                <constraint firstAttribute="trailing" secondItem="9k5-ad-pID" secondAttribute="trailing" id="4Jw-zW-ER4"/>
+                <constraint firstItem="YiK-1x-v9b" firstAttribute="top" secondItem="QEB-RN-BNh" secondAttribute="bottom" id="5l9-7v-2Yp"/>
+                <constraint firstItem="mTW-y7-IyK" firstAttribute="height" secondItem="zg6-sf-gyd" secondAttribute="height" id="9sk-AY-Q2s"/>
+                <constraint firstItem="mTW-y7-IyK" firstAttribute="top" secondItem="zg6-sf-gyd" secondAttribute="bottom" id="GfF-0S-Xpx"/>
+                <constraint firstItem="QEB-RN-BNh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Gye-0v-72X"/>
+                <constraint firstItem="YiK-1x-v9b" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MV9-79-Ed4"/>
+                <constraint firstItem="QEB-RN-BNh" firstAttribute="height" secondItem="hIZ-dY-xLe" secondAttribute="height" id="Oto-W4-E1n"/>
+                <constraint firstItem="zg6-sf-gyd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ovo-mq-lC4"/>
+                <constraint firstAttribute="trailing" secondItem="mTW-y7-IyK" secondAttribute="trailing" id="SI8-vN-m0H"/>
+                <constraint firstItem="hIZ-dY-xLe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SKL-Oj-VTa"/>
+                <constraint firstItem="Z4C-Yd-Ts1" firstAttribute="height" secondItem="YiK-1x-v9b" secondAttribute="height" id="UZp-Ns-wpQ"/>
+                <constraint firstItem="QEB-RN-BNh" firstAttribute="top" secondItem="hIZ-dY-xLe" secondAttribute="bottom" id="Ui9-Yg-Qc5"/>
+                <constraint firstItem="mTW-y7-IyK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XKO-cS-1ce"/>
+                <constraint firstAttribute="trailing" secondItem="Z4C-Yd-Ts1" secondAttribute="trailing" id="ZmZ-GY-Vew"/>
+                <constraint firstItem="YiK-1x-v9b" firstAttribute="height" secondItem="QEB-RN-BNh" secondAttribute="height" id="a3R-k1-np1"/>
                 <constraint firstAttribute="trailing" secondItem="Upe-1t-QO7" secondAttribute="trailing" id="ahm-64-eId"/>
-                <constraint firstItem="i8B-lL-R1A" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="cMz-Wr-Vfb"/>
-                <constraint firstItem="9k5-ad-pID" firstAttribute="trailing" secondItem="i8B-lL-R1A" secondAttribute="trailing" id="meh-Dt-bL8"/>
+                <constraint firstAttribute="trailing" secondItem="zg6-sf-gyd" secondAttribute="trailing" id="bZz-ws-gwz"/>
+                <constraint firstItem="YiK-1x-v9b" firstAttribute="width" secondItem="QEB-RN-BNh" secondAttribute="width" id="cYT-XO-LSI"/>
+                <constraint firstItem="zg6-sf-gyd" firstAttribute="height" secondItem="Z4C-Yd-Ts1" secondAttribute="height" id="cjw-qj-oPF"/>
+                <constraint firstAttribute="trailing" secondItem="YiK-1x-v9b" secondAttribute="trailing" id="eh1-mB-QVQ"/>
+                <constraint firstAttribute="trailing" secondItem="hIZ-dY-xLe" secondAttribute="trailing" id="jGX-KQ-5XL"/>
+                <constraint firstItem="Z4C-Yd-Ts1" firstAttribute="top" secondItem="YiK-1x-v9b" secondAttribute="bottom" id="kXK-64-O4u"/>
+                <constraint firstItem="hIZ-dY-xLe" firstAttribute="top" secondItem="9k5-ad-pID" secondAttribute="bottom" id="nEv-zz-ay6"/>
                 <constraint firstItem="Upe-1t-QO7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="r2I-KA-KrX"/>
-                <constraint firstItem="9k5-ad-pID" firstAttribute="leading" secondItem="i8B-lL-R1A" secondAttribute="leading" id="tMX-IO-I3b"/>
+                <constraint firstItem="zg6-sf-gyd" firstAttribute="top" secondItem="Z4C-Yd-Ts1" secondAttribute="bottom" id="s7U-Zg-gIG"/>
+                <constraint firstAttribute="trailing" secondItem="QEB-RN-BNh" secondAttribute="trailing" id="wbB-VV-dlS"/>
+                <constraint firstItem="Upe-1t-QO7" firstAttribute="top" secondItem="mTW-y7-IyK" secondAttribute="bottom" constant="8" id="zpe-3Q-TBF"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <variation key="widthClass=regular">
-                <mask key="constraints">
-                    <exclude reference="cMz-Wr-Vfb"/>
-                </mask>
-            </variation>
             <connections>
                 <outlet property="cursusValueLabel" destination="YiK-1x-v9b" id="CrI-L4-8Yb"/>
                 <outlet property="evaluationPointLabel" destination="QEB-RN-BNh" id="wx2-PB-6be"/>
                 <outlet property="experienceBar" destination="Upe-1t-QO7" id="sWi-4g-bI6"/>
                 <outlet property="gradeValueLabel" destination="Z4C-Yd-Ts1" id="3Qy-me-bhT"/>
-                <outlet property="localisationLabel" destination="n4t-LR-v5e" id="qNp-dc-htT"/>
                 <outlet property="mailLabel" destination="mTW-y7-IyK" id="42p-3H-RSl"/>
                 <outlet property="nameLabel" destination="9k5-ad-pID" id="DVD-8z-f3y"/>
                 <outlet property="phoneLabel" destination="zg6-sf-gyd" id="ffs-rj-FIo"/>
                 <outlet property="walletValueLabel" destination="hIZ-dY-xLe" id="cng-eO-31O"/>
             </connections>
-            <point key="canvasLocation" x="270" y="103.125"/>
+            <point key="canvasLocation" x="270" y="25"/>
         </view>
     </objects>
 </document>
